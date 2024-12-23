@@ -29,7 +29,7 @@ body{
 }
 
 .left-panel h1{
-    font-size: 3.5em;
+    font-size: 3.9em;
     color: #0767ff;
     margin-bottom: 0px;
 }
@@ -37,6 +37,7 @@ body{
 .left-panel p{
     margin-top: 3px;
     font-size: 1.5em;
+    
     color: #1c1e21;
 }
 .right-panel{
@@ -45,13 +46,13 @@ body{
 }
 .login-box{
     display: flex;
-    width: 300px;
+    width: 350px;
     flex-direction: column;
     align-items: center;
     background-color: white;
     
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 0 9px rgba(0, 0, 0, 0.10);
 }
 .login-box form{
@@ -60,7 +61,7 @@ body{
     flex-direction: column;
 }
 .login-box input{
-    width: 100%;
+    width: 90%;
     margin-bottom: 10px;
     padding: 15px;
     border: 1px solid #ccc;
@@ -70,6 +71,7 @@ body{
 .login-box button{
 
     width: 100%;
+    margin-bottom: 10px;
     padding: 15px;
     border: none;
     border-radius: 5px;
@@ -84,6 +86,8 @@ body{
 }
 
 .login-box button:last-child{
+    width: 50%;
+    margin: 0 auto;
     background-color: #42b72b;
 }
 .login-box button:last-child:hover{
@@ -109,19 +113,54 @@ body{
     font-size: 1.em;
     font-weight: bold;
 }
+.right-panel a:last-child:hover{
+    text-decoration: underline;
+}
 .right-panel p{
     text-align: center;
     font-size: 1em;
     color: #312f2f;
 }
-.footer{
-    align-content: flex-end;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #737373;
-    margin-top: auto;
-    background-color: rgb(255, 255, 255);
+
+.footer {
     width: 100%;
-    height: 50px;
+    background-color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #737373;
+    line-height: 1.5;
+    border-top: 1px solid #ddd;
+}
+
+.footer a {
+    
+    text-decoration: none;
+    color: #737373;
+    margin: 0 5px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer button {
+    background-color: transparent;
+    border: none;
+    color: #737373;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.footer button:hover {
+    text-decoration: underline;
+}
+
+.footer hr {
+    margin: 10px auto;
+    width: 95%;
+    border: none;
+    border-top: 1px solid #ddd;
 }
